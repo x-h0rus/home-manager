@@ -1,0 +1,105 @@
+# === ENVIRONMENT & SECRETS ===
+# Never commit .env files or any files containing secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Common secret patterns
+*.key
+*.pem
+*.cert
+*.p12
+*.pfx
+secrets.*
+credentials.*
+config/secrets.*
+
+# API Keys and Tokens
+*api*key*
+*token*
+*secret*
+*password*
+!example*.env
+
+# === FRONTEND (React/Vite) ===
+# Dependencies
+node_modules/
+npm/
+yarn.lock
+.pnp.*
+
+# Build outputs
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Cache
+.cache/
+.temp/
+.vite/
+
+# === LOGS ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log.*
+
+# === EDITOR & IDE ===
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sw?
+*.swo
+*.swn
+*~
+.DS_Store
+Thumbs.db
+
+# === OPERATING SYSTEM ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# === BACKUP & TEMPORARY ===
+*.bak
+*.tmp
+*.temp
+*.orig
+*.rej
+*.old
+*.backup
+*.save
+*~
+#*#
+
+# === TEST & COVERAGE ===
+coverage/
+.nyc_output/
+*.lcov
+
+# === MISCELLANEOUS ===
+# Local development files
+*.local
+.local/
+
+# === SECURITY CHECKLIST ===
+# Ensure these are NEVER committed:
+# - Database passwords
+# - API keys (AWS, Google, Stripe, Supabase, etc.)
+# - JWT secrets
+# - OAuth credentials
+# - Private keys
+# - Personal access tokens
+# - Session secrets
