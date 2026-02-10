@@ -34,9 +34,6 @@ Get a quick overview of your home with today's priorities and key metrics at a g
 
 This is a single-user personal application. Access is restricted to existing users only.
 
-## Setup
-
-Copy `example.env` to `.env.local` and configure your environment variables before running.
 
 ## Privacy
 
